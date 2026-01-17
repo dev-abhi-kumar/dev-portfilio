@@ -1,0 +1,163 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: radial-gradient(circle at right, #2a0d1f, #05050b);
+  color:#fff;
+}
+
+/* NAVBAR */
+.navbar{
+  border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:18px 20px;
+}
+
+.nav-wrap{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:22px;
+  font-weight:600;
+}
+
+.logo img{
+  width:36px;
+}
+
+.nav-links{
+  list-style:none;
+  display:flex;
+  gap:30px;
+}
+
+.nav-links li{
+  cursor:pointer;
+  color:#cfcfcf;
+  font-weight:500;
+}
+
+.nav-links li.active{
+  color:#4f8cff;
+}
+
+.menu{
+  display:none;
+  font-size:28px;
+}
+
+/* HERO */
+.hero{
+  padding:90px 0;
+}
+
+.hero-wrap{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:40px;
+}
+
+.hero-text{
+  max-width:520px;
+}
+
+.intro{
+  font-size:20px;
+  margin-bottom:10px;
+}
+
+.intro span{
+  color:#4f8cff;
+}
+
+.hero-text h1{
+  font-size:58px;
+  margin-bottom:20px;
+}
+
+.desc{
+  font-size:16px;
+  color:#bdbdbd;
+  margin-bottom:35px;
+}
+
+.buttons{
+  display:flex;
+  gap:18px;
+}
+
+.btn{
+  padding:14px 34px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.btn.primary{
+  background:#ff7a18;
+  color:#fff;
+}
+
+.btn.primary:hover{
+  box-shadow:0 0 25px rgba(255,122,24,0.6);
+}
+
+.btn.outline{
+  border:1px solid #fff;
+  color:#fff;
+}
+
+.btn.outline:hover{
+  background:#fff;
+  color:#000;
+}
+
+/* IMAGE */
+.hero-image img{
+  max-width:460px;
+  width:100%;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* ANIMATION */
+@keyframes float{
+  0%{transform:translateY(0);}
+  50%{transform:translateY(-15px);}
+  100%{transform:translateY(0);}
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero-wrap{
+    flex-direction:column-reverse;
+    text-align:center;
+  }
+
+  .buttons{
+    justify-content:center;
+  }
+
+  .nav-links{
+    display:none;
+  }
+
+  .menu{
+    display:block;
+  }
+}
