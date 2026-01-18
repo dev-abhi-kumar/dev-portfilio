@@ -5,25 +5,35 @@
   <title>Abhishek | Web Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+
+  <!-- GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+
 </head>
 <body>
 
 <!-- NAVBAR -->
 <header class="navbar">
   <div class="container nav-wrap">
-    <div class="logo">
-      <img src="images/logo.svg" alt="logo">
+    <a href="https://github.com/dev-abhi-kumar" class="logo">
+      <img src="./assets/logo-name.png" alt="logo">
       <span>Abhishek.dev</span>
-    </div>
+    </a>
 
     <nav>
       <ul class="nav-links">
-        <li class="active">Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Services</li>
-        <li>Portfolio</li>
-        <li>Contact</li>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
 
@@ -56,6 +66,251 @@
 
   </div>
 </section>
+
+
+<!-- About Section -->
+ <section class="about-section" id="about">
+  <div class="container about-wrap">
+
+    <!-- LEFT -->
+    <div class="about-left">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-desc">
+        I am a passionate Web Developer who loves building modern,
+        responsive, and user-friendly websites with clean code.
+      </p>
+
+      <div class="about-card">
+
+        <div class="profile">
+          <img src="assets/image.png" alt="profile">
+          <div>
+            <h3>Abhishek Kumar</h3>
+            <span>Web Developer</span>
+          </div>
+        </div>
+
+        <ul class="info-list">
+          <li><i class="fa-solid fa-envelope"></i><a href="mailto:erabhi.connect@gmail.com">erabhi.connect@gmail.com</a></li>
+          <li><i class="fa-solid fa-location-dot"></i> Vaishali (Bihar) India</li>
+        </ul>
+
+        <div class="stats">
+          <div class="stat">
+            <i class="fa-solid fa-briefcase"></i>
+            +2 Years of Experience
+          </div>
+          <div class="stat">
+            <i class="fa-solid fa-check"></i>
+            20+ Projects Completed
+          </div>
+          <div class="stat">
+            <i class="fa-solid fa-smile"></i>
+            15+ Happy Clients
+          </div>
+        </div>
+
+        <a href="https://github.com/dev-abhi-kumar"  target="_blank" class="btn primary">Read More</a>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="about-right">
+      <img src="./assets/home section img.png" alt="about image">
+    </div>
+
+  </div>
+</section>
+
+<!-- skill section  -->
+ <section class="skills-section" id="skills">
+  <div class="container skills-wrap">
+
+    <!-- LEFT -->
+    <div class="skills-left">
+      <h2 class="section-title">My Skills</h2>
+      <p class="section-desc">
+        I have experience working with modern web technologies and tools.
+        I focus on building responsive, fast, and user-friendly applications.
+      </p>
+
+      <!-- SKILL ITEM -->
+      <div class="skill">
+        <div class="skill-info">
+          <span><i class="fa-brands fa-html5"></i> HTML</span>
+          <span>90%</span>
+        </div>
+        <div class="progress">
+          <div class="progress-bar html"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-info">
+          <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+          <span>92%</span>
+        </div>
+        <div class="progress">
+          <div class="progress-bar css"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-info">
+          <span><i class="fa-brands fa-js"></i> JavaScript</span>
+          <span>75%</span>
+        </div>
+        <div class="progress">
+          <div class="progress-bar js"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-info">
+          <span><i class="fa-solid fa-database"></i> MySQL</span>
+          <span>70%</span>
+        </div>
+        <div class="progress">
+          <div class="progress-bar mysql"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="skills-right">
+      <img src="./assets/home section img.png" alt="skills image">
+    </div>
+
+  </div>
+</section>
+
+<!-- Service section -->
+ <section class="services-section" id="services">
+  <div class="container">
+
+    <h2 class="section-title center service-title">My Services</h2>
+    <p class="section-desc center">
+      I provide high-quality web solutions focused on performance,
+      design, and user experience.
+    </p>
+
+    <div class="services-wrap">
+
+      <!-- SERVICE 1 -->
+      <div class="service-card">
+        <i class="fa-solid fa-code"></i>
+        <h3>Web Development</h3>
+        <p>
+          Modern, responsive, and fast websites built using
+          latest web technologies.
+        </p>
+      </div>
+
+      <!-- SERVICE 2 -->
+      <div class="service-card">
+        <i class="fa-solid fa-pen-nib"></i>
+        <h3>UI / UX Design</h3>
+        <p>
+          Clean, creative, and user-friendly designs
+          that improve user experience.
+        </p>
+      </div>
+
+      <!-- SERVICE 3 -->
+      <div class="service-card">
+        <i class="fa-solid fa-database"></i>
+        <h3>Backend & Database</h3>
+        <p>
+          Secure and scalable backend systems
+          with efficient database management.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- portfilio section -->
+
+<section class="portfolio-section" id="portfolio">
+  <div class="container">
+
+    <h2 class="section-title service-title">My Portfolio</h2>
+    <p class="section-desc center">
+      Here are some of my projects that demonstrate my skills
+      in web development and problem solving.
+    </p>
+
+    <div class="portfolio-wrap">
+
+      <!-- Project 1 -->
+      <div class="portfolio-card">
+        <img src="./assets/student.png" alt="project">
+        <div class="portfolio-content">
+          <h3>Student Document Request System</h3>
+          <p>Online system for requesting certificates.</p>
+          <a href="https://student-document-request.netlify.app/" class="btn small">View Project</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="portfolio-card">
+        <img src="./assets/assistant.png" alt="project">
+        <div class="portfolio-content">
+          <h3>Voice Assistants</h3>
+          <p>Web-based voice assistant.</p>
+          <a href="https://dev-abhi-kumar.github.io/Assistant/" class="btn small">View Project</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="portfolio-card">
+        <img src="images/project3.jpg" alt="project">
+        <div class="portfolio-content">
+          <h3>Library Management System</h3>
+          <p>Book issue, return & record management.</p>
+          <a href="#" class="btn small">View Project</a>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="portfolio-card">
+        <img src="images/project4.jpg" alt="project">
+        <div class="portfolio-content">
+          <h3>Portfolio Website</h3>
+          <p>Personal responsive portfolio website.</p>
+          <a href="#" class="btn small">View Project</a>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="portfolio-card">
+        <img src="images/project5.jpg" alt="project">
+        <div class="portfolio-content">
+          <h3>E-Commerce Website</h3>
+          <p>Online shopping website with cart system.</p>
+          <a href="#" class="btn small">View Project</a>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="portfolio-card">
+        <img src="images/project6.jpg" alt="project">
+        <div class="portfolio-content">
+          <h3>College Management System</h3>
+          <p>Admin & student management web app.</p>
+          <a href="#" class="btn small">View Project</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
 
 </body>
 </html>
